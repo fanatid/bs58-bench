@@ -1,0 +1,17 @@
+[package]
+name = "bs58-bench"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.8.5"
+rand_chacha = "0.3.1"
+rand_core = "0.6.4"
+solana-sdk = "=2.0.11"
+
+[dev-dependencies]
+criterion = "0.5.1"
+
+[[bench]]
+name = "bs58"
+harness = false
